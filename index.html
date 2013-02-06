@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>LigaSelect</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="ligaSelect.js" type="text/javascript"></script>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <select name="cities" class="a">
+        <option>Romania</option>
+        <option>Sweden</option>
+        <option>United Kingdom</option>
+    </select>
+
+
+    <select name="count" class="b">
+        <option>First</option>
+        <option>Second</option>
+        <option>Third</option>
+    </select>
+
+    <script>
+        $(document).ready(function(){
+            $('.a').ligaSelect({optionHead:'Choose your country'});
+            $('.b').ligaSelect({optionHead:'Choose your place'});
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'PT Sans';
+    font-size: 100%;
+}
+
+.ligaSelect {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+    .ligaSelect .selectPanel {
+        background-image: linear-gradient(bottom, rgb(219,219,219) 0%, rgb(250,250,250) 66%);
+        background-image: -o-linear-gradient(bottom, rgb(219,219,219) 0%, rgb(250,250,250) 66%);
+        background-image: -moz-linear-gradient(bottom, rgb(219,219,219) 0%, rgb(250,250,250) 66%);
+        background-image: -webkit-linear-gradient(bottom, rgb(219,219,219) 0%, rgb(250,250,250) 66%);
+        background-image: -ms-linear-gradient(bottom, rgb(219,219,219) 0%, rgb(250,250,250) 66%);
+
+        background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0, rgb(219,219,219)),
+            color-stop(0.66, rgb(250,250,250))
+        );
+        height: 25px;
+        width: 200px;
+        border-radius: 4px;
+        border: 1px solid #797a7c;
+        line-height: 25px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .ligaSelect .selectOption {
+        margin-left: 10px;
+        color: #444444;
+        font-size: 0.9em;
+    }
+
+    .ligaSelect .selectArrow {
+        float: right;
+        background-image: linear-gradient(bottom, rgb(199,199,199) 0%, rgb(240,240,240) 66%);
+        background-image: -o-linear-gradient(bottom, rgb(199,199,199) 0%, rgb(240,240,240) 66%);
+        background-image: -moz-linear-gradient(bottom, rgb(199,199,199) 0%, rgb(240,240,240) 66%);
+        background-image: -webkit-linear-gradient(bottom, rgb(199,199,199) 0%, rgb(240,240,240) 66%);
+        background-image: -ms-linear-gradient(bottom, rgb(199,199,199) 0%, rgb(240,240,240) 66%);
+        background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0, rgb(199,199,199)),
+            color-stop(0.66, rgb(240,240,240))
+        );
+        border-left: 1px solid #797a7c;
+        width: 25px;
+        height: 25px;
+        position: relative;
+    }
+        .ligaSelect .selectArrow .triangle {
+            position: absolute;
+            border-left: 5px solid rgba(224, 224, 224, 0);
+            border-right: 5px solid rgba(224, 224, 224, 0);
+            border-top: 5px solid #5e5e5e;
+            left: 7px;
+            top: 10px;
+        }
+
+    .ligaSelect .selectOptions {
+        width: 202px;
+        padding: 0px;
+        margin: 0px;
+        position: absolute;
+        display: none;
+        z-index: 100;
+    }
+
+        .ligaSelect .selectOptions li {
+            display: block;
+            height: 27px;
+            border-top: 1px solid #ffffff;
+            border-bottom: 1px solid #c2c2c2;
+            border-left: 1px solid #878789;
+            border-right: 1px solid #878789;
+            line-height: 25px;
+            padding-left: 10px;
+            background: #f6f6f6;
+            color: #444444;
+            font-size: 0.9em;
+            cursor: pointer;
+        }
+
+        .ligaSelect .selectOptions li:hover {
+            background: #ffffff;
+        }
+
+        .ligaSelect .selectOptions li:first-child {
+            border-top: #dbdddc;
+            border-radius: 4px 4px 0 0;
+        }
+
+        .ligaSelect .selectOptions li:last-child {
+            border-radius: 0 0 4px 4px;
+            border-bottom: 1px solid #878789;
+        }
